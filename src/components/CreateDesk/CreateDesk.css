@@ -1,0 +1,53 @@
+.CreateDesk {
+  color: #fff;
+  background-color: rgba(207, 46, 46, 0.9);
+  width: 200px;
+  height: 200px;
+  word-wrap: break-word;
+  padding: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease;
+  margin: 20px;
+}
+
+.CreateDesk:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.CreateShowDesk {
+  color: #fff;
+  background-color: rgba(207, 46, 46, 0.9);
+  width: 200px;
+  height: 200px;
+  word-wrap: break-word;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
+  margin: 20px;
+}
+
+.CreateShowDesk input {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: transparent;
+  border: 0;
+  color: white;
+}
+
+.CreateShowDesk button {
+  margin-top: 10px;
+  border: 0;
+  border-radius: 50px;
+  padding: 2px;
+}
+
+.CreateShowDesk button:hover {
+  cursor: pointer;
+}

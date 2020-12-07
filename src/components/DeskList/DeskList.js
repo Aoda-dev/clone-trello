@@ -5,8 +5,12 @@ import CreateDesk from '../CreateDesk/CreateDesk'
 
 import './DeskList.css'
 
-const DeskList = () => {
+const DeskList = (props) => {
   const [desks, setDesks] = useState([])
+
+  const goToColumns = (id) => {
+    props.history.push(`/list/${id}`)
+  }
 
   const updateDesks = (desk) => {
     setDesks([...desks, desk])
@@ -46,6 +50,7 @@ const DeskList = () => {
       {desks.map((desk) => {
         return (
           <Desk
+            goToColumns={goToColumns}
             id={desk.id}
             deleteDesk={deleteDesks}
             name={desk.name}

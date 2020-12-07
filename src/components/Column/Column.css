@@ -1,0 +1,49 @@
+.Column {
+  color: #fff;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 10px;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Column:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.Column.create:hover {
+  background-color: rgba(207, 46, 46, 0.9);
+}
+
+.Column.Form {
+  background-color: rgba(207, 46, 46, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 50%;
+  margin: 50px auto;
+  height: 200px;
+}
+
+.Column.Form input {
+  max-width: 40%;
+  border: none;
+  background: transparent;
+  color: white;
+  border-bottom: 2px solid white;
+  margin-bottom: 20px;
+}
+
+.Column.Form button {
+  border: none;
+  width: 150px;
+  max-width: 50%;
+  height: 40px;
+  margin-top: 10px;
+  cursor: pointer;
+}
